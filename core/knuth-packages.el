@@ -16,6 +16,8 @@
     ace-jump-buffer
     ace-window
     anzu
+    ecb
+    cedet
     browse-kill-ring
     dash
     discover-my-major
