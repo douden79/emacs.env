@@ -39,13 +39,17 @@
 ;; ecb mode
 (require 'ecb)
 
-;; custom-set-variables
+;; custom-set-variables for ecb frame
 (define-key ecb-mode-map (kbd "M-1") 'ecb-goto-window-directories)
 (define-key ecb-mode-map (kbd "M-2") 'ecb-goto-window-sources)
 (define-key ecb-mode-map (kbd "M-3") 'ecb-goto-window-methods)
 (define-key ecb-mode-map (kbd "M-4") 'ecb-goto-window-history)
 (define-key ecb-mode-map (kbd "M-5") 'ecb-goto-window-compilation)
 (define-key ecb-mode-map (kbd "M-0") 'ecb-goto-window-edit1)
+
+;; ecb compile window frame
+(setq ecb-show-sources-in-directories-buffer 'always)
+(setq ecb-compile-window-height 12)
 
 ;; move emacs windows
 (global-set-key [M-left] 'windmove-left)
@@ -104,6 +108,11 @@
 ;;; magit mode
 (global-set-key (kbd "C-x s") 'magit-status) ;
 (global-set-key (kbd "C-x l") 'magit-log)
+
+;;; yasnippet
+;;; should be loaded before auto complete so that they can work together
+(require 'yasnippet)
+(yas-global-mode 1)
 
 (provide 'knuth-global-keybindings)
 ;; end knuth-global-keybindings
