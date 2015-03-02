@@ -109,10 +109,5 @@
 (global-set-key (kbd "C-x s") 'magit-status) ;
 (global-set-key (kbd "C-x l") 'magit-log)
 
-;;; yasnippet
-;;; should be loaded before auto complete so that they can work together
-(require 'yasnippet)
-(yas-global-mode 1)
-
 (provide 'knuth-global-keybindings)
 ;; end knuth-global-keybindings
