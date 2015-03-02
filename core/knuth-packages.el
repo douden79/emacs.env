@@ -66,6 +66,7 @@
     elpy 
     jedi 
     nlinum 
+    yasnippet
     c-eldoc )
   "A list of packages to ensure are installed at launch.")
 

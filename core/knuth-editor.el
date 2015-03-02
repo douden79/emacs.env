@@ -360,6 +360,10 @@
 ;;; Provides helpful description of the arguments to C functions.
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
 
+;;; yasnippet disable when ansi-term mode.
+(add-hook 'term-mode-hook (lambda()
+        (setq yas-dont-activate t)))
+
 (provide 'knuth-editor)
 
 ;;; knuth-editor.el ends here

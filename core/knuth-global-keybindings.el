@@ -109,5 +109,7 @@
 (global-set-key (kbd "C-x s") 'magit-status) ;
 (global-set-key (kbd "C-x l") 'magit-log)
 
+(require 'yasnippet)
+(yas-global-mode 1)
 (provide 'knuth-global-keybindings)
 ;; end knuth-global-keybindings
