@@ -15,7 +15,6 @@
   '(ace-jump-mode
     ace-jump-buffer
     ace-window
-    ack-and-a-half
     anzu
     browse-kill-ring
     dash
@@ -52,7 +51,6 @@
     flymake
     ggtags
     helm-gtags
-    ecb
     metaweblog
     org2blog
     xml-rpc
@@ -60,7 +58,6 @@
     mark-multiple
     markdown-mode
     minimap
-    cedet
     function-args
     smex
     ac-helm
