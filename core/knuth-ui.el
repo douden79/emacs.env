@@ -42,7 +42,7 @@
                                           "%b"))))
 
 ;; use zenburn as the default theme
-(load-theme 'zenburn t)
+(load-theme 'monokai t)
 
 (provide 'knuth-ui)
 ;;; knuth-ui.el ends here

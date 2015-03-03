@@ -67,6 +67,7 @@
     jedi 
     nlinum 
     yasnippet
+    monokai-theme
     c-eldoc )
   "A list of packages to ensure are installed at launch.")
 
