@@ -364,6 +364,9 @@
 (add-hook 'term-mode-hook (lambda()
         (setq yas-dont-activate t)))
 
+;;; open large file support for plugin.
+(require 'vlf-setup)
+
 (provide 'knuth-editor)
 
 ;;; knuth-editor.el ends here
